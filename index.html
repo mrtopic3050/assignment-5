@@ -26,6 +26,9 @@
       };
     </script>
 
+    <!-- Font awesome CDN -->
+    <script src="https://kit.fontawesome.com/f1154bff89.js" crossorigin="anonymous"></script>
+
     <!-- Google font: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -87,6 +90,7 @@
         <div class="flex justify-between gap-6">
           <div class="bg-base-100 w-[1146px] h-[918px] rounded-2xl">
             <div class="flex justify-around mt-6">
+                <!-- Task Assigned block -->
               <div
                 class="w-[263px] h-[128px] flex bg-[#F4F7FF] justify-center rounded-2xl"
               >
@@ -106,7 +110,8 @@
                   >
                 </div>
               </div>
-              <div class="w-[524px] h-[128px] rounded-xl flex justify-center bg-gradient-to-r from-sky-500 to-indigo-500">
+              <!-- Discover something block -->
+              <div class="w-[524px] h-[128px] rounded-xl flex justify-center bg-">
                 <div class="flex my-auto">
                     <div class="mr-7">
                         <img src="./assets/board.png" alt="Related picture added">
@@ -117,17 +122,14 @@
                     </div>
                 </div>
               </div>
+              <!-- Date block -->
               <div
                 class="w-[263px] h-[128px] flex bg-[#F4F7FF] justify-center rounded-2xl"
               >
                 <div
                   class="my-auto mr-5 w-16 h-16 rounded-full bg-base-100 text-center"
                 >
-                  <input
-                    type="checkbox"
-                    checked="checked"
-                    class="checkbox checkbox-primary text-white h-7 w-7 mb-4 mt-4"
-                  />
+                <img class="mx-auto mt-4" src="./assets/calender.png" alt="calender img added">
                 </div>
                 <div class="my-auto">
                   <p>Task Assigned</p>
@@ -137,11 +139,174 @@
                 </div>
               </div>
             </div>
+            <hr class="border-t-2 border-dashed border-gray-200 mt-8">
             <!-- tasks -->
-            <div></div>
+            <div class="grid grid-cols-3 gap-9 mt-8 ml-4 mr-4">
+                <!-- Task-1 -->
+                <div class="card bg-[#F4F7FF] w-[342px] h-[317px] shadow-sm">
+                    
+                    <div class="card-body">
+                        <div class="text-left w-[114px] h-[40px] bg-base-100 rounded-lg mt-3">
+                            <p class="text-base font-normal text-center mt-2">ShopEase</p>
+                        </div>
+                      <h2 class="text-2xl mt-4">Fix Mobile Button Issue</h2>
+                      <div class="bg-base-100 w-[294px] h-[92px] items-center mt-3">
+                        <p class="font-extralight text-base text-center mt-4 rounded-lg">Debug using Chrome DevTools, check for overlapping</p>
+                      </div>
+                      <hr class="border-t-2 border-dashed border-gray-200 mt-1">
+
+                      <div class="flex justify-between">
+                        <div>
+                            <p class="text-sm font-extralight">Deadline</p>
+                            <h1 class="text-base font-medium">21 March 2025</h1>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary bg-[#3752FD] text-white w-[135px] h-[44px]">Completed</button>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Task-2 -->
+                  <div class="card bg-[#F4F7FF] w-[342px] h-[317px] shadow-sm">
+                    
+                    <div class="card-body">
+                        <div class="text-left w-[114px] h-[40px] bg-base-100 rounded-lg mt-3">
+                            <p class="text-base font-normal text-center mt-2">ShopEase</p>
+                        </div>
+                      <h2 class="text-2xl mt-4">Fix Mobile Button Issue</h2>
+                      <div class="bg-base-100 w-[294px] h-[92px] items-center mt-3">
+                        <p class="font-extralight text-base text-center mt-4 rounded-lg">Debug using Chrome DevTools, check for overlapping</p>
+                      </div>
+                      <hr class="border-t-2 border-dashed border-gray-200 mt-1">
+
+                      <div class="flex justify-between">
+                        <div>
+                            <p class="text-sm font-extralight">Deadline</p>
+                            <h1 class="text-base font-medium">21 March 2025</h1>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary bg-[#3752FD] text-white w-[135px] h-[44px]">Completed</button>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- task-3 -->
+                  <div class="card bg-[#F4F7FF] w-[342px] h-[317px] shadow-sm">
+                    
+                    <div class="card-body">
+                        <div class="text-left w-[114px] h-[40px] bg-base-100 rounded-lg mt-3">
+                            <p class="text-base font-normal text-center mt-2">ShopEase</p>
+                        </div>
+                      <h2 class="text-2xl mt-4">Fix Mobile Button Issue</h2>
+                      <div class="bg-base-100 w-[294px] h-[92px] items-center mt-3">
+                        <p class="font-extralight text-base text-center mt-4 rounded-lg">Debug using Chrome DevTools, check for overlapping</p>
+                      </div>
+                      <hr class="border-t-2 border-dashed border-gray-200 mt-1">
+
+                      <div class="flex justify-between">
+                        <div>
+                            <p class="text-sm font-extralight">Deadline</p>
+                            <h1 class="text-base font-medium">21 March 2025</h1>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary bg-[#3752FD] text-white w-[135px] h-[44px]">Completed</button>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- task-4 -->
+                  <div class="card bg-[#F4F7FF] w-[342px] h-[317px] shadow-sm">
+                    
+                    <div class="card-body">
+                        <div class="text-left w-[114px] h-[40px] bg-base-100 rounded-lg mt-3">
+                            <p class="text-base font-normal text-center mt-2">ShopEase</p>
+                        </div>
+                      <h2 class="text-2xl mt-4">Fix Mobile Button Issue</h2>
+                      <div class="bg-base-100 w-[294px] h-[92px] items-center mt-3">
+                        <p class="font-extralight text-base text-center mt-4 rounded-lg">Debug using Chrome DevTools, check for overlapping</p>
+                      </div>
+                      <hr class="border-t-2 border-dashed border-gray-200 mt-1">
+
+                      <div class="flex justify-between">
+                        <div>
+                            <p class="text-sm font-extralight">Deadline</p>
+                            <h1 class="text-base font-medium">21 March 2025</h1>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary bg-[#3752FD] text-white w-[135px] h-[44px]">Completed</button>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- task-5 -->
+                  <div class="card bg-[#F4F7FF] w-[342px] h-[317px] shadow-sm">
+                    
+                    <div class="card-body">
+                        <div class="text-left w-[114px] h-[40px] bg-base-100 rounded-lg mt-3">
+                            <p class="text-base font-normal text-center mt-2">ShopEase</p>
+                        </div>
+                      <h2 class="text-2xl mt-4">Fix Mobile Button Issue</h2>
+                      <div class="bg-base-100 w-[294px] h-[92px] items-center mt-3">
+                        <p class="font-extralight text-base text-center mt-4 rounded-lg">Debug using Chrome DevTools, check for overlapping</p>
+                      </div>
+                      <hr class="border-t-2 border-dashed border-gray-200 mt-1">
+
+                      <div class="flex justify-between">
+                        <div>
+                            <p class="text-sm font-extralight">Deadline</p>
+                            <h1 class="text-base font-medium">21 March 2025</h1>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary bg-[#3752FD] text-white w-[135px] h-[44px]">Completed</button>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- task-6 -->
+                  <div class="card bg-[#F4F7FF] w-[342px] h-[317px] shadow-sm">
+                    
+                    <div class="card-body">
+                        <div class="text-left w-[114px] h-[40px] bg-base-100 rounded-lg mt-3">
+                            <p class="text-base font-normal text-center mt-2">ShopEase</p>
+                        </div>
+                      <h2 class="text-2xl mt-4">Fix Mobile Button Issue</h2>
+                      <div class="bg-base-100 w-[294px] h-[92px] items-center mt-3">
+                        <p class="font-extralight text-base text-center mt-4 rounded-lg">Debug using Chrome DevTools, check for overlapping</p>
+                      </div>
+                      <hr class="border-t-2 border-dashed border-gray-200 mt-1">
+
+                      <div class="flex justify-between">
+                        <div>
+                            <p class="text-sm font-extralight">Deadline</p>
+                            <h1 class="text-base font-medium">21 March 2025</h1>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary bg-[#3752FD] text-white w-[135px] h-[44px]">Completed</button>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
           </div>
           <div class="w-366px h-918px bg-base-100 flex-1 rounded-2xl">
-            <h1>task</h1>
+            <div class="flex justify-center mt-6">
+                <img src="./assets/activity.png" alt="activity icon added">
+                <h1 class="ml-4 text-xl">Activity Log</h1>
+            </div>
+            <div class="flex justify-center mt-4">
+                <button class="btn btn-primary bg-[#3752FD] text-white w-[135px] h-[44px]">Completed</button>
+            </div>
           </div>
         </div>
       </section>

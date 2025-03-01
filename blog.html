@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevBoard</title>
+    <!-- daisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- tailWind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Font awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/f1154bff89.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google font: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .font-poppins {
+        font-family: "poppins", serif;
+      }
+    </style>
+  </head>
+  <body class="bg-blue-100">
+    <section class="font-poppins max-w-[1576px] min-h-screen mx-auto py-6">
+      <header>
+        <div class="navbar bg-base-100 shadow-sm rounded-2xl">
+          <div class="flex justify-between items-center w-full">
+            <div class="flex ml-6">
+              <div>
+                <img src="./assets/logo.png" alt="Logo of website" />
+              </div>
+              <div>
+                <h2 class="text-2xl font-light pt-4 ml-2">
+                  Dev<span class="font-bold">Board</span>
+                </h2>
+              </div>
+            </div>
+            <div>
+              <button
+                id="return-home"
+                class="btn btn-primary bg-[#3752FD] text-white w-[135px] h-[44px] mr-3"
+              >
+                Back To Desk
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section>
+        <h1 class="flex justify-center text-2xl font-bold my-4">Blogs</h1>
+        <div class="flex flex-col gap-5">
+            <!-- Ques-1 -->
+            <div class="bg-base-100 h-[150px] rounded-xl">
+                <div class="mx-8 pt-4">
+                    <h1 class="font-bold text-lg">Question-1: </h1>
+                </div>
+                <hr class="border-t-2 border-dashed border-gray-200 mt-3" />
+                <div class="mx-8 pt-4">
+                    <p class="font-extralight text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint at unde adipisci quis iste quasi sed quidem dolorum tempora!</p>
+                </div>
+                
+            </div>
+            <!-- Ques-2 -->
+            <div class="bg-base-100 h-[150px] rounded-xl">
+                <div class="mx-8 pt-4">
+                    <h1 class="font-bold text-lg">Question-1: </h1>
+                </div>
+                <hr class="border-t-2 border-dashed border-gray-200 mt-3" />
+                <div class="mx-8 pt-4">
+                    <p class="font-extralight text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint at unde adipisci quis iste quasi sed quidem dolorum tempora!</p>
+                </div>
+                
+            </div>
+            <!-- Ques-3 -->
+            <div class="bg-base-100 h-[150px] rounded-xl">
+                <div class="mx-8 pt-4">
+                    <h1 class="font-bold text-lg">Question-1: </h1>
+                </div>
+                <hr class="border-t-2 border-dashed border-gray-200 mt-3" />
+                <div class="mx-8 pt-4">
+                    <p class="font-extralight text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint at unde adipisci quis iste quasi sed quidem dolorum tempora!</p>
+                </div>
+                
+            </div>
+            <!-- Ques-4 -->
+            <div class="bg-base-100 h-[150px] rounded-xl">
+                <div class="mx-8 pt-4">
+                    <h1 class="font-bold text-lg">Question-1: </h1>
+                </div>
+                <hr class="border-t-2 border-dashed border-gray-200 mt-3" />
+                <div class="mx-8 pt-4">
+                    <p class="font-extralight text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint at unde adipisci quis iste quasi sed quidem dolorum tempora!</p>
+                </div>
+                
+            </div>
+            <!-- Ques-5 -->
+            <div class="bg-base-100 h-[150px] rounded-xl">
+                <div class="mx-8 pt-4">
+                    <h1 class="font-bold text-lg">Question-1: </h1>
+                </div>
+                <hr class="border-t-2 border-dashed border-gray-200 mt-3" />
+                <div class="mx-8 pt-4">
+                    <p class="font-extralight text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint at unde adipisci quis iste quasi sed quidem dolorum tempora!</p>
+                </div>
+                
+            </div>
+        </div>
+      </section>
+    </section>
+
+    <script src="./jsScript/script.js"></script>
+    <script>
+      //navigate pages [from blog to home]
+      document
+        .getElementById("return-home")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+
+          window.location.href = "./index.html";
+        });
+    </script>
+  </body>
+</html>

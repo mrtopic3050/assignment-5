@@ -1,32 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DevBoard</title>
 
     <!-- daisyUI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- tailWind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Google font: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
+
+
+    <style>
+      .font-poppins {
+        font-family: "poppins", serif;
+      }
+
+    </style>
+  </head>
+  <body class="bg-blue-100">
+    <!-- Navbar section -->
+    <section class="font-poppins max-w-[1576px] min-h-screen mx-auto py-6">
+      <header>
+        <div class="navbar bg-base-100 shadow-sm rounded-2xl">
+          <div class="flex justify-between items-center w-full">
+            <div class="flex ml-6">
+              <div>
+                <img src="./assets/logo.png" alt="Logo of website" />
+              </div>
+              <div>
+                <h2 class="text-2xl font-light pt-4 ml-2">
+                  Dev<span class="font-bold">Board</span>
+                </h2>
+              </div>
+            </div>
+            <div class="flex mr-[24px]">
+              <div class="bg-[#F4F7FF] rounded-full w-[123px] h-16 mr-[44px]">
+                <div class="text-center mt-2">
+                  <input
+                    type="checkbox"
+                    checked="checked"
+                    class="checkbox checkbox-primary text-white h-7 w-7 mb-4"
+                  />
+                  <label class="ml-2" for=""
+                    ><span class="text-[32px] font-bold">23</span></label
+                  >
+                </div>
+              </div>
+              <div>
+                <div class="mt-3">
+                  <img src="./assets/theme-btn.png" alt="Theme change button" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- Main Section -->
+      <section class="my-4">
+        <!-- Div container -->
+        <div class="flex justify-between gap-6">
+          <div class="bg-base-100 w-[1146px] h-[918px] rounded-2xl">
+            <div class="flex justify-around mt-6">
+              <div
+                class="w-[263px] h-[128px] flex bg-[#F4F7FF] justify-center rounded-2xl"
+              >
+                <div
+                  class="my-auto mr-5 w-16 h-16 rounded-full bg-base-100 text-center"
+                >
+                  <input
+                    type="checkbox"
+                    checked="checked"
+                    class="checkbox checkbox-primary text-white h-7 w-7 mb-4 mt-4"
+                  />
+                </div>
+                <div class="my-auto">
+                  <p>Task Assigned</p>
+                  <label class="ml-2" for=""
+                    ><span class="text-[32px] font-bold">05</span></label
+                  >
+                </div>
+              </div>
+              <div class="w-[524px] h-[128px] rounded-xl flex justify-center bg-gradient-to-r from-sky-500 to-indigo-500">
+                <div class="flex my-auto">
+                    <div class="mr-7">
+                        <img src="./assets/board.png" alt="Related picture added">
     
+                    </div>
+                    <div class="">
+                        <h1 class="text-black text-2xl w-[298px] h-[72px] mt-2 font-medium text-left">Discover Something New Today!</h1>
+                    </div>
+                </div>
+              </div>
+              <div
+                class="w-[263px] h-[128px] flex bg-[#F4F7FF] justify-center rounded-2xl"
+              >
+                <div
+                  class="my-auto mr-5 w-16 h-16 rounded-full bg-base-100 text-center"
+                >
+                  <input
+                    type="checkbox"
+                    checked="checked"
+                    class="checkbox checkbox-primary text-white h-7 w-7 mb-4 mt-4"
+                  />
+                </div>
+                <div class="my-auto">
+                  <p>Task Assigned</p>
+                  <label class="ml-2" for=""
+                    ><span class="text-[32px] font-bold">05</span></label
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- tasks -->
+            <div></div>
+          </div>
+          <div class="w-366px h-918px bg-base-100 flex-1 rounded-2xl">
+            <h1>task</h1>
+          </div>
+        </div>
+      </section>
+    </section>
 
-</head>
-<body class="">
-    <header>
-        <nav class="">
+    <main class=""></main>
 
-        </nav>
-
-    </header>
-
-    <main class="">
-
-    </main>
-
-    <footer>
-
-    </footer>
-</body>
+    <footer></footer>
+  </body>
 </html>

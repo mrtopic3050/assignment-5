@@ -75,7 +75,7 @@
                     class="checkbox checkbox-primary text-white h-7 w-7 mb-4"
                   />
                   <label class="ml-2" for=""
-                    ><span class="text-[32px] font-bold">23</span></label
+                    ><span id="total-task-done" class="text-[32px] font-bold">23</span></label
                   >
                 </div>
               </div>
@@ -115,7 +115,7 @@
                 <div class="my-auto">
                   <p>Task Assigned</p>
                   <label class="ml-2" for=""
-                    ><span class="text-[32px] font-bold">05</span></label
+                    ><span class="text-[32px] font-bold">0</span><span id="task-assigned" class="text-[32px] font-bold">6</span></label
                   >
                 </div>
               </div>
@@ -149,7 +149,7 @@
                     alt="calender img added"
                   />
                 </div>
-                <div class="my-auto">
+                <div class="my-auto date-container">
                   <p>Wed,</p>
                   <p class="font-bold">Jul 28, 2025</p>
                 </div>
@@ -185,7 +185,7 @@
                     </div>
                     <div>
                       <button
-                        class="btn btn-primary bg-[#3752FD] text-white w-[135px] h-[44px]"
+                        class="btn btn-primary bg-[#3752FD] text-white w-[135px] h-[44px] complete-btn"
                       >
                         Completed
                       </button>
@@ -221,7 +221,7 @@
                     </div>
                     <div>
                       <button
-                        class="btn btn-primary bg-[#3752FD] text-white w-[135px] h-[44px]"
+                        class="btn btn-primary bg-[#3752FD] text-white w-[135px] h-[44px] complete-btn"
                       >
                         Completed
                       </button>
@@ -257,7 +257,7 @@
                     </div>
                     <div>
                       <button
-                        class="btn btn-primary bg-[#3752FD] text-white w-[135px] h-[44px]"
+                        class="btn btn-primary bg-[#3752FD] text-white w-[135px] h-[44px] complete-btn"
                       >
                         Completed
                       </button>
@@ -291,7 +291,7 @@
                     </div>
                     <div>
                       <button
-                        class="btn btn-primary bg-[#3752FD] text-white w-[135px] h-[44px]"
+                        class="btn btn-primary bg-[#3752FD] text-white w-[135px] h-[44px] complete-btn"
                       >
                         Completed
                       </button>
@@ -327,7 +327,7 @@
                     </div>
                     <div>
                       <button
-                        class="btn btn-primary bg-[#3752FD] text-white w-[135px] h-[44px]"
+                        class="btn btn-primary bg-[#3752FD] text-white w-[135px] h-[44px] complete-btn"
                       >
                         Completed
                       </button>
@@ -363,7 +363,7 @@
                     </div>
                     <div>
                       <button
-                        class="btn btn-primary bg-[#3752FD] text-white w-[135px] h-[44px]"
+                        class="btn btn-primary bg-[#3752FD] text-white w-[135px] h-[44px] complete-btn"
                       >
                         Completed
                       </button>
@@ -374,17 +374,30 @@
             </div>
           </div>
           <div class="w-366px h-918px bg-base-100 flex-1 rounded-2xl">
-            <div class="flex justify-center mt-6">
-              <img src="./assets/activity.png" alt="activity icon added" />
-              <h1 class="ml-4 text-xl">Activity Log</h1>
+            <div>
+                <div class="flex justify-center mt-6">
+                    <img src="./assets/activity.png" alt="activity icon added" />
+                    <h1 class="ml-4 text-xl">Activity Log</h1>
+                  </div>
+                  <!-- Clear Activity Log Button -->
+                  <div class="flex justify-center mt-4">
+                    <button id="clear-history"
+                      class="btn btn-primary bg-[#3752FD] text-white w-[135px] h-[44px]"
+                    >
+                      Clear History
+                    </button>
+                    
+                  </div>
             </div>
-            <!-- Clear Activity Log Button -->
-            <div class="flex justify-center mt-4">
-              <button
-                class="btn btn-primary bg-[#3752FD] text-white w-[135px] h-[44px]"
-              >
-                Completed
-              </button>
+            <hr class="border-t-2 border-dashed border-gray-200 mt-8" />
+            <div class="messege-container text-center flex justify-center">
+               <div class="messege-tiles mt-3">
+                <div class="w-[318px] h-[68px] rounded-md p-2 bg-[#F4F7FF]">
+                    <p>You Have Complete The Task <span>Add Dark Mode</span>at <span>time</span></p>
+
+                </div>
+
+               </div> 
             </div>
           </div>
         </div>
